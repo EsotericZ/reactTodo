@@ -1,22 +1,18 @@
 import Counter from './Counter';
 import List from './List';
+import Todo from './Todo';
 
 const App = () => { 
   const myFaveFoods = ['Oatmeal', 'Chicken', 'Steak',];
-  const myFaveCryptos = ['XRP', 'ALGO', 'XLM',];
   const msg1 = 'My Favorite Foods'
-  const msg2 = 'My Favorite Cryptos'
 
   return(
     <div>
+      <Todo/>
       <Counter/>
       <List
         message={msg1}
         items={myFaveFoods}
-      />
-      <List
-        message={msg2}
-        items={myFaveCryptos}
       />
     </div>
   );
